@@ -1,0 +1,54 @@
+/* Variáveis de tema — trocadas via [data-theme] no <html> */
+:root,
+:root[data-theme='dark'] {
+  --bg: #0f172a;
+  --bg-elevated: #1e293b;
+  --bg-input: #0f172a;
+  --border: #334155;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --income: #22c55e;
+  --expense: #ef4444;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme='light'] {
+  --bg: #f1f5f9;
+  --bg-elevated: #ffffff;
+  --bg-input: #f8fafc;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --income: #16a34a;
+  --expense: #dc2626;
+  --shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
